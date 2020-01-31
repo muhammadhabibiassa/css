@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Grid pada HTML</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            padding: 0;
+            width: 960px;
+            background-image: url(latihan/grid.PNG)
+        }
+
+        .container:before,
+        .container:after,
+        .row:before,
+        .row:after {
+            content: "";
+            display: table;
+        }
+        .container:after,
+        .row:after {
+            clear: both;
+        }
+
+        .row {
+            clear: both;
+            margin: 10px 0 10px 0;
+        }
+
+        .header {
+            height: 100px;
+            width: 940px;
+            float: left;
+            margin: 0 10px 0 10px;
+            padding: 0;
+            background-color:#FFFFCC;
+        }
+
+        .header h1 {
+            margin: 30px 0;
+            font-size: 30px;
+        }
+        
+        .sidebar {
+            width: 220px;
+            float: left;
+            margin: 0 10px 0 10px;
+            padding: 0;
+            background-color: #66FFFF;
+        }
+
+        .sidebar h1, .content h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .sidebar p, .content p {
+            text-align: justify;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+        }
+
+        .content {
+            width: 700px;
+            float: left;
+            margin: 0 10px 0 10px;
+            padding: 0;
+            background-color: #CC66FF;
+        }
+
+        .content p {
+            font-size: 18px;
+            background-color: #99FFCC;
+        }
+
+        .footer {
+            background: grey;
+            display: block;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 10px 0 10px;
+            padding: 0;
+            text-align: center;
+            width: 940px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <h1>Layout</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sidebar">
+                <h1>Daftar Isi</h1>
+                <p>
+                    <a href="" title="Grid">Grid</a><br>
+                    <a href="" title="Pembuatan Grid">Pembuatan Grid</a>
+                </p>
+            </div>
+            <div class="content">
+                <h1>Grid</h1>
+                <p>
+                    Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi. Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi. Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi. Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi. Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi.
+                </p>
+                <p>
+                    Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi. Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi. Sebuah layout yang baik menyusun elemen-elemen halaman dengan rapi dan mudah diprediksi.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer">&copy; Copyright 2013, Desain Web</div>
+        </div>
+    </div>
+</body>
+</html>

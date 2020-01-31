@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout Dasar Dokumen Web</title>
+    <style type="text/css">
+        body {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .header, .nav, .aside, .section, .footer {
+            background: #14BCE6;
+            border: 1px solid white;
+        }
+
+        .header, .nav, .footer {
+            width: 100%;
+        }
+
+        .header, .footer {
+            height: 100px;
+        }
+
+        .header h1 {
+            margin: 30px auto;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .nav {
+            height: 50px;
+        }
+
+        .nav .menu {
+            margin-top: 5px;
+            margin-left: 12px;
+        }
+
+        .nav .menu a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .aside {
+            float: left;
+            height: 300px;
+            width: 29.5%;
+        }
+
+        .aside .item .kalender {
+            width: 90%;
+            height: 150px;
+            background: #33FF00;
+            margin: 8px auto;
+            text-align: center;
+        }
+
+        .aside .item .iklan {
+            text-align: center;
+            background: #CC0066;
+            height: 60px;
+            width: 90%;
+            margin: 8px auto;
+        }
+
+        .section {
+            float: right;
+            height: 300px;
+            width: 70%;
+        }
+
+        .section .content {
+            width: 95%;
+            margin: 8px auto;
+        }
+
+        .section .content h1 {
+            text-align: center;
+        }
+
+        .section .content p{
+            text-align: justify;
+        }
+
+        .footer {
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>DESAIN WEB</h1>
+    </div>
+
+    <div class="nav">
+        <div class="menu">
+            <a href="testing.html">Home</a>
+            <a href="" target="_blank">About</a>
+        </div>
+    </div>
+
+    <div class="aside">
+        <div class="item">
+            <div class="kalender">
+                Calender
+            </div>
+            <div class="iklan">
+                Iklan
+            </div>
+            <div class="iklan">
+                Iklan
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>Layout</h1>
+            <p>
+                Dalam dunia design, Layout berbicara mengenai bagaimana penataan elemen-elemen dalam sebuah halaman dengan benar. Sama seperti tipografi, terdapat sangat banyak elemen-elemen pada layout, yang tentunya tidak akan dapat dibahas pada bagian ini sendiri. Pembahasan layout secara menyeluruh akan memerlukan bukunya tersendiri. Kita akan hanya melihat elemen-elemen layout yang umumnya ditemukan pada dokumen web, dan bagaimana membuat elemen-elemen tersebut dengan HTML dan CSS.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">Copyright &copy; 2012 Desain Web Class</div>
+</body>
+</html>
